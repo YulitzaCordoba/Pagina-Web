@@ -1,0 +1,144 @@
+/* Estilos todos */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #555;
+}
+
+a {
+  color: #0077FF;
+}
+
+/* Estilos secciones*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 20px;
+  border: 2px solid #DDD;
+}
+
+section.destacada {
+  background-color: #FEE;
+}
+
+section.normal {
+  background-color: #FFF;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+section img {
+  margin: 20px 0;
+}
+
+/* Estilos formulario*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 40px;
+  border: 2px solid #DDD;
+}
+
+form label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+}
+
+form button {
+  background-color: #0077FF;
+  color: #FFF;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos posicion */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Reglas Media Query */
+
+@media screen and (max-width: 480px) {
+  section h2 {
+    font-size: 24px;
+  }
+  section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  form label {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 20px;
+    margin: 10px;
+  }
+  section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  form {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  form input {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  form button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
